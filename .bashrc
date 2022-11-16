@@ -1,0 +1,9 @@
+export STORE_PATH=/nfs/home/cv-stavya/eor_appstore
+alias apps="cd ~/eor_appstore/awiros-apps/apps"
+alias alex="cd ~/eor_appstore/alexandria"
+alias vid='cd ~/eor_appstore/videos'
+alias engyn='cd ~/eor_appstore/engyn-on-rails/src/core'
+alias eor='docker exec -it stavya_eor_apps bash'
+alias ..='cd ..'
+alias ....='cd ../..'
+alias docker_run='docker run -it -v $PWD:/workspace --net host --shm-size 5G '
