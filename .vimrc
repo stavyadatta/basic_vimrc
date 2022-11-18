@@ -1,6 +1,7 @@
 set relativenumber                                                                            
 set cursorline
 set cursorcolumn
+set laststatus=2
 set expandtab
 set tabstop=2
 set autoindent
@@ -16,6 +17,8 @@ call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
+
 
 call plug#end()
 
@@ -45,3 +48,5 @@ endif
 
 syntax on
 colorscheme onedark
+set noshowmode
+
