@@ -14,3 +14,7 @@ cp ~/onedark.vim/colors/onedark.vim ~/.vim/colors/
 cp ~/onedark.vim/autoload/onedark.vim ~/.vim/autoload/
 
 cp ~/basic_vimrc/.vimrc ~/.vimrc
+
+# PlugInstall
+vim +'PlugInstall --sync' +qa
+
