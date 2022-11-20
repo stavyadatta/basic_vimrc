@@ -1,6 +1,7 @@
 set relativenumber                                                                            
 set cursorline
 set cursorcolumn
+set laststatus=2
 set expandtab
 set hlsearch
 set tabstop=2
@@ -46,3 +47,5 @@ let g:lightline = {
   \ }
 syntax on
 colorscheme onedark
+set noshowmode
+
