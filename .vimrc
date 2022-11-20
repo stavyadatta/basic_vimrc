@@ -48,4 +48,6 @@ let g:lightline = {
 syntax on
 colorscheme onedark
 set noshowmode
-
+set showcmd
+set ruler
+set wildmenu
