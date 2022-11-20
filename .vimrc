@@ -2,10 +2,13 @@ set relativenumber
 set cursorline
 set cursorcolumn
 set expandtab
+set hlsearch
 set tabstop=2
 set autoindent
 set shiftwidth=2
+set laststatus=2
 set nu
+set noshowmode
 packloadall
 " Load all of the helptags now, after plugins have been loaded.
 " All messages and errors will be ignored.
@@ -16,14 +19,10 @@ call plug#begin()
 
 Plug 'https://github.com/preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'sheerun/vim-polyglot'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-let g:cpp_class_scope_highlight = 1
-let g:cpp_member_variable_highlight = 1
-let g:cpp_class_decl_highlight = 1
-let g:cpp_experimental_simple_template_highlight = 1
-let g:cpp_concepts_highlight = 1
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
@@ -42,6 +41,8 @@ if (empty($TMUX))
   endif
 endif
 
-
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
 syntax on
 colorscheme onedark
