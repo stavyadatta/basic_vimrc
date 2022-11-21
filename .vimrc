@@ -51,3 +51,10 @@ set noshowmode
 set showcmd
 set ruler
 set wildmenu
+set incsearch
+set ignorecase
+set smartcase
+
+set lbr
+
+map <leader>w :w! <CR>
