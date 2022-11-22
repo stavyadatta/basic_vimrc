@@ -54,6 +54,7 @@ set wildmenu
 set incsearch
 set ignorecase
 set smartcase
+set noswapfile
 
 set lbr
 
