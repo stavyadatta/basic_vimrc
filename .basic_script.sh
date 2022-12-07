@@ -1,3 +1,4 @@
+pushd .
 mkdir -p ~/.vim/pack/git-plugins/start
 git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 
@@ -22,6 +23,12 @@ cp ~/onedark.vim/autoload/lightline/colorscheme/onedark.vim ~/.vim/autoload/ligh
 rm ~/.vimrc
 ln -s ~/basic_vimrc/.vimrc ~/.vimrc
 
+# Commentary.vim
+mkdir -p ~/.vim/pack/tpope/start
+cd ~/.vim/pack/tpope/start
+git clone https://tpope.io/vim/commentary.git 
+vim -u NONE -c "helptags commentary/doc" -c q
+popd
 # PlugInstall
 vim +'PlugInstall --sync' +qa
 
