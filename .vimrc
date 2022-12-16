@@ -59,3 +59,5 @@ set noswapfile
 set lbr
 
 map <leader>w :w! <CR>
+nmap <F6> :NERDTreeToggle<CR>
+
