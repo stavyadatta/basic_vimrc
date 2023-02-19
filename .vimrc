@@ -60,4 +60,5 @@ set lbr
 
 map <leader>w :w! <CR>
 nmap <F6> :NERDTreeToggle<CR>
-
+let &term = "xterm-256color"
+set hidden
